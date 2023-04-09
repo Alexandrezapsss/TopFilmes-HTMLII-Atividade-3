@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Filmes e Séries</title>
+    <style>
+        /* Estilos CSS para o formulário */
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: green;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .selecao {
+            color: white;
+            margin: 30px;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+        a{
+            color: white;
+        }
+        footer{
+            color: white;
+            margin-left: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="selecao">
+    <h1>TOP Filmes</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pag2.html" rel="next" target="_blank">Segunda Página - Filmes de Terror</a></li>
+        <li><a href="./noticias/pag3.html" rel="next" target="_blank">Terceira página - Kung-fu</a></li>
+        <li><a href="form.html" rel="here" target="_blank">Terceira página - Formulário para Novas Sugestões</a></li>
+    </ul>
+    <br>
+    <hr>
+    <br><br>
+    <form>
+        <label>
+            Nome
+            <input type="text" name="nome" required>
+        </label>
+        <label>
+            E-mail
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            Tipo
+            <select name="tipo">
+                <option value="">-- Selecione --</option>
+                <option value="filme">Filme</option>
+                <option value="serie">Série</option>
+            </select>
+        </label>
+        <label>
+            Nome do filme/série
+            <input type="text" name="nome_filmserie" required>
+        </label>
+        <label>
+            Link do trailer (opcional)
+            <input type="text" name="trailer">
+        </label>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<footer>
+    <strong>
+        Nome: Alexandre Queiroz da Silva<br>
+        <p>
+            <a href="https://www.linkedin.com/in/alexandre-queiroz-da-silva-542904124/">Linkkedin Alexandre &copy; 2023</a>
+        </p>
+    </strong>
+</footer>
+</body>
+
+</html>
